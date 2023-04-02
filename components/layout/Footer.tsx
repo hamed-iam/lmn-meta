@@ -1,5 +1,5 @@
-import { Box, Container, Image, Text, createStyles } from "@mantine/core";
-
+import { Box, Container, Text, createStyles } from "@mantine/core";
+import Image from 'next/image'
 const footerLinks = [
   {
     title: "Navigation",
@@ -70,7 +70,7 @@ const footerLinks = [
   },
 ];
 
-const useStyles = createStyles((theme) => ({
+const useStyles = createStyles((theme:any) => ({
   footer: {
     marginTop: 120,
     paddingTop: theme.spacing.xl * 2,
@@ -217,7 +217,7 @@ const _Footer = () => {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <Box className={classes.logo}>
-          <Image src="/footer-logo.png" />
+          <Image width={200} height={352} alt='' src="/assets/footer-logo.png" />
         </Box>
         <Box className={classes.groups}>{groups}</Box>
       </Container>

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { Box, Grid, Radio } from "@mantine/core";
 import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import { colors } from "@/theme";

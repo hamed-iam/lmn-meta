@@ -1,5 +1,6 @@
 import { Box, Container, createStyles, Grid, Text, Title } from "@mantine/core";
 import { colors } from "@/theme";
+import Image from 'next/image'
 
 const useStyles = createStyles((theme) => ({
   imageContainer: {
@@ -65,8 +66,8 @@ const About = () => {
             </Text>
           </Grid.Col>
           <Grid.Col sm={6} md={6} className={classes.imageContainer}>
-            <img src="/mario-and-adrian-a.jpg" className={classes.frontPic} />
-            <img src="/mario-and-adrian-b.jpg" className={classes.backPic} />
+            <Image width={200} height={200} alt="" src="/assets/mario-and-adrian-a.jpg" className={classes.frontPic} />
+            <Image width={200} height={200} alt="" src="/assets/mario-and-adrian-b.jpg" className={classes.backPic} />
           </Grid.Col>
         </Grid>
       </Container>

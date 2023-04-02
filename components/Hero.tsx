@@ -72,7 +72,7 @@ const Hero = () => {
             </Button>
           </Grid.Col>
           <Grid.Col sm={6} md={6} className={classes.imageContainer}>
-            <Image alt='' src="/restaurant-food.jpg" className={classes.image} />
+            <Image alt=''width={400} height={400} src="/assets/restaurant-food.jpg" className={classes.image} />
           </Grid.Col>
         </Grid>
       </Container>

@@ -34,7 +34,7 @@ const _Card: React.FC<{ dish: Dish }> = ({ dish }) => {
   return (
     <Card radius="lg" shadow="md" className={classes.background}>
       <Card.Section>
-        <Image alt="" src={dish.image} height={200} className={classes.image} />
+        <Image alt="" src={dish.image} height={200} width={200} className={classes.image} />
       </Card.Section>
       <Stack my="lg">
         <Group position="apart" noWrap>

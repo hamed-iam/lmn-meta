@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { Box, Center, Group, Text } from "@mantine/core";
 import { IconAlertTriangle } from "@tabler/icons-react";
 import { StateContext } from "@/contexts";

@@ -76,7 +76,7 @@ const _Header: React.FC<HeaderProps> = ({ navLinks }) => {
     <Header height={80} py="lg" className={classes.header}>
       <Container className={classes.inner}>
         <Box>
-          <Image src="/logo.svg" alt="Little Lemon" />
+          <Image width={148} height={40} src="/assets/logo.svg" alt="Little Lemon" />
         </Box>
         <Group spacing="xs" noWrap>
           {links}

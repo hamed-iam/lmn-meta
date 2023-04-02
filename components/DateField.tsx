@@ -1,5 +1,5 @@
 import { createStyles } from "@mantine/core";
-import { DatePicker, DatePickerProps } from "@mantine/dates";
+import { DateInput, DateInputProps } from "@mantine/dates";
 import { colors } from "@/theme";
 
 const useStyles = createStyles((theme) => ({
@@ -30,23 +30,40 @@ const useStyles = createStyles((theme) => ({
   },
 }));
 
-const DateField = (props: DatePickerProps) => {
+const DateField = (props: DateInputProps) => {
   const { classes, cx } = useStyles();
 
   return (
-    <DatePicker
-      variant="filled"
-      radius="md"
-      size="xl"
+    <DateInput
+      placeholder="Date input"
+      maw={400}
+      mx="auto"
+      // variant="filled"
+      // radius="md"
+      // size="xl"
       {...props}
+      // styles={{
+      //   input: cx(classes.input, {
+      //     [classes.activeInput]: props.value,
+      //   }),
+      //   // dropdown: classes.dropdown,
+      //   rightSection: classes.rightSection,
+      //   day: classes.day,
+      // }}
       classNames={{
         input: cx(classes.input, {
           [classes.activeInput]: props.value,
         }),
-        dropdown: classes.dropdown,
+        // dropdown: classes.dropdown,
         rightSection: classes.rightSection,
         day: classes.day,
       }}
+      // value={value}
+      // onChange={setValue}
+      // label="Date input"
+      // placeholder="Date input"
+      // maw={400}
+      // mx="auto"
     />
   );
 };

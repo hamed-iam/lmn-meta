@@ -1,5 +1,5 @@
 import * as React from "react";
-import Image from 'next/image'
+import Image from "next/image";
 import { Box, Center, Container, createStyles, Grid } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
@@ -22,13 +22,20 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const ReservationsBottom: React.FC<{ images: string[] }> = ({ images }) => {
+  console.log(images);
   const { classes } = useStyles();
 
   const pictures = React.useMemo(
     () =>
       images.map((image) => (
         <Grid.Col key={image} sm={4} md={4}>
-          <Image alt="" src={image} className={classes.image} />
+          <Image
+            alt=""
+            width="400"
+            height="400"
+            src={`/assets/${image}`}
+            className={classes.image}
+          />
         </Grid.Col>
       )),
     [classes.image, images]
